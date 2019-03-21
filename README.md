@@ -23,7 +23,7 @@ This script uses ANDROID_HOME variable from the machine on which it is executed.
 
 This starts emulator given by name in step 1 
 
-MyAppiumTests/start-appium-new.sh
+AutomationBddAppium/start-appium-new.sh
 
 How to execute the script:
 
