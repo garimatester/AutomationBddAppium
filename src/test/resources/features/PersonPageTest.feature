@@ -1,3 +1,5 @@
+
+@smoke
 Feature: Visit person Detail Screen in  the app.
 
   Background: A Person Page

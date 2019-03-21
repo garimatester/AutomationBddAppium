@@ -12,8 +12,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
@@ -23,11 +21,11 @@ import io.appium.java_client.MobileElement;
  * Responsible for setting up the Appium test Driver
  */
 
-@CucumberOptions(features = "src/test/resources/features",
+/*@CucumberOptions(features = "src/test/resources/features",
 glue = {"tests"},
 tags = {"~@Ignore"}
-)
-public abstract class BaseTest extends AbstractTestNGCucumberTests {
+)*/
+public abstract class BaseTest  {
 
     protected Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -158,6 +156,7 @@ public abstract class BaseTest extends AbstractTestNGCucumberTests {
      */
     @AfterSuite
     public void tearDownAppium() {
+
         driver.quit();
     }
 
@@ -169,8 +168,8 @@ public abstract class BaseTest extends AbstractTestNGCucumberTests {
      * commenting for now as running tests in one go
      * have to implement later
      */
-    @AfterClass
+  @AfterClass
     public void restartApp() {
-        driver.resetApp();
+       driver.resetApp();
     }
 }

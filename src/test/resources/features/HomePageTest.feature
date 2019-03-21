@@ -1,3 +1,4 @@
+@smoke
 Feature: Visit Home Screen in  the app.
 
   Background: A Home Page
