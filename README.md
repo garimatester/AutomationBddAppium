@@ -66,7 +66,7 @@ List of devices attached
 
 #2:  run the testsuite
 
-# Navigate to project directory /MyAppiumTests
+# Navigate to project directory /AutomationBddAppium
 
 # execute command to run test suite
 
